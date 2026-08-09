@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    /* height: 400px;
+    width: 400px;
+    border: 1px solid black; */
+    /* overflow: auto; */
+    float: left; /* parent is floated, so child can inherit this float */
+    width: 480px; /* fixed width makes the parent float more visible */
+    text-align: justify;
+    background-color: aquamarine;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+img{
+    float: inherit; /* inherit the float value from the parent .container */
+    width: 200px;
+    margin-right: 10px;
+}
+
+.container2{
+    width: 500px;
+    text-align: justify;
+}
+
+.img2{
+    float: right;
+}
+
+p{
+    clear: left;
+}

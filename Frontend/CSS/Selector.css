@@ -1,0 +1,27 @@
+/* 1. Element Selector */
+h1, h3{
+    color: blue;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+}
+
+/* 2. Id Selector */
+#element-selector{
+    color: red;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* 3. Class Selector */
+.element{
+    color: rgb(255, 200, 0); 
+    padding: 10px;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    display:block;
+}

@@ -1,0 +1,13 @@
+p{
+    background-color: rgb(202, 225, 241);
+    color: red;
+    border: 2px dotted rgb(10, 10, 10);
+}
+
+button{
+    background-color: rgb(95, 248, 115);
+    color: rgb(15, 1, 1);
+    border: 2px solid rgb(10, 10, 10);
+}
+
+/*  */

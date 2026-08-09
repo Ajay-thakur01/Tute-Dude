@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff8000;
+    --heading-text: #0f0e0e;
+    --text-color: #202020;
+    --color: white;
+    --color2: rgb(1, 1, 195);
+    --color3: rgb(2, 160, 2);
+    --background: whitesmoke;
+    --box-background: #eeeeeea0;
+    --heading-font:"Bebas Neue", sans-serif;
+    --body-text: "Urbanist", sans-serif;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--body-text);
+    color: var(--text-color);
+    background:
+
+        /* Right side soft texture/glow */
+        radial-gradient(
+            circle at 85% 40%,
+            rgba(220, 220, 220, 0.5),
+            transparent 35%
+        ),
+
+        /* Right side light grey fade */
+        linear-gradient(
+            to right,
+            transparent 55%,
+            rgba(230, 230, 230, 0.6) 100%
+        ),
+
+        linear-gradient(
+            to left,
+            transparent 55%,
+            rgba(230, 230, 230, 0.6) 100%
+        ),
+
+        /* Vertical strips */
+        repeating-linear-gradient(
+            90deg,
+            #faf1f1 0px,
+            #faf1f1 45px,
+            #ffffff 45px,
+            #ffffff 65px
+        );
+
+    background-size: cover;
+    
+   
+}
+
+section {
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    background:
+        /* Right side soft texture/glow */
+        radial-gradient(
+            circle at 85% 40%,
+            rgba(220, 220, 220, 0.5),
+            transparent 35%
+        ),
+
+        /* Right side light grey fade */
+        linear-gradient(
+            to right,
+            transparent 55%,
+            rgba(230, 230, 230, 0.6) 100%
+        ),
+
+        linear-gradient(
+            to left,
+            transparent 85%,
+            rgba(230, 230, 230, 0.6) 100%
+        ),
+
+        /* Vertical strips */
+        repeating-linear-gradient(
+            90deg,
+            #faf1f1 0px,
+            #faf1f1 45px,
+            #ffffff 45px,
+            #ffffff 65px
+        );
+
+    background-size: cover;
+}
+
+/* Fixed navbar: keep layout aligned by constraining inner container and reserving top space */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo h1{
+    color: var(--heading-text);
+    font-size: 3.5rem;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--body-text);
+    font-size: 1.3rem;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 20px;
+}
+
+.search-box {
+    padding: 10px 12px 10px 36px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.search-box:focus {
+    outline: none;
+    border-color: #888;
+    box-shadow: inset 0 0 0 3px rgba(255, 157, 0, 0.095);
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.nav-cart a {
+    text-decoration: none;
+}
+
+.cart-icon {
+    height: 20px;
+}
+
+.cart-count {
+    font-size: 1rem;
+    position: relative;
+    top: -3px;
+    color: #333;
+}
+
+.nav-profile {
+    /* border: 2px solid var(--box-background); */
+    background-color: var(--box-background);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+}
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-heading h1 span{
+    color: var(--primary-color);
+    font-size: 5rem;
+    display: block;
+    font-family: var(--body-text);
+}
+
+.left-heading h1{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    color: var(--heading-text);
+}
+
+.left-heading p{
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 2.5rem;
+}
+
+.left-heading a{
+    text-decoration: none;
+    background-color: var(--color3);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+}
+
+.rightimage img {
+    display: block;
+    width: 700px;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    color: #fff;
+}
+
+.footer-content img {
+    width: 48px;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.footer-content span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+}
+
+.footer-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+/* Effects and Animations */
+
+.nav-links a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+    transform: translatey(-2px);
+}
+
+/* Display section */
+
+.product-display{
+    background-color: rgb(238, 237, 237);
+}
+
+.display-container{
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    height: 100vh;
+    background-color: rgb(238, 237, 237);
+    display: grid;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sport-shoes {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px  #ff800023;
+    margin-left: 20px;
+}
+
+.right-box h1{
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+}
+
+.right-box p{
+    margin-bottom: 2.5rem;
+    line-height: 1.6rem;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.right-box .price{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.right-box p span {
+    color: var(--color3);
+    display: block;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: -6px;
+    margin-bottom: 5px;
+}
+
+.right-box .taxes {
+    display: block;
+    position: relative;
+    left: 14rem;
+    top: -45px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--color1);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: -20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 2px;
+  text-align: center;
+  min-width: 80px;
+  background: #f4f4f4;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #fdfcfc;
+  color: #ff8000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.7rem;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+  vertical-align: middle;
+}
+
+.right-box .add-to-cart {
+    padding: 1rem 4rem;
+    margin-top: -55px;
+    margin-left: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+}
+
+.bottom-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.scrolling-gallery {
+    flex: 0 0 calc((100% - 3rem) / 4);
+    min-width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 0 20px;
+}
+
+.scrolling-gallery img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 8px 20px  #ff800023;
+    object-fit: cover;
+}

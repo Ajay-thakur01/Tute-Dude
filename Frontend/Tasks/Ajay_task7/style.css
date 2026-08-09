@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+/* Nav Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.35rem;
+    color: #374151;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem;
+    background:  #419cfd;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: #2f8df4;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+
+/* Hero section with left and right sections */
+
+.hero-section {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 50px;
+}
+
+/* left section */
+.left {
+    flex: 1;
+    min-width: 0;
+}
+
+.left h1 {
+    font-size: clamp(2.75rem, 6vw, 4.25rem);
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    margin-bottom: 24px;
+}
+
+.left h1 span {
+    display: block;
+    color: #4f46e5;
+}
+
+.left p {
+    margin-bottom: 32px;
+    text-align: justify;
+    color: #4b5563;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.btn-2 {
+    /* display: inline-block; */
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+/* button hover property */
+
+.btn-2:hover,
+.btn-2:focus-visible {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+/* right section */
+
+.right {
+    flex: 1;
+    min-width: 0;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+    box-shadow: 0 32px 70px rgba(10, 16, 29, 0.571);
+}
+
+/* media property for responsive layout tablet mod */
+
+@media (max-width: 768px) {
+    .navbar .logo{
+        font-size: 1.1rem;
+    }
+    .nav-links a{
+    font-size: 1rem;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+    .right img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* media property for responsive layout mobile mod */
+
+@media (max-width: 426px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .right img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn{
+        margin-left: auto;
+    }
+}
+
+
+/* Hamburger - Menu */
+
+.hamburger-menu button {
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, font-size 0.25s ease;
+    border: 1px solid #f4f7fb;
+    background: #419cfd;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    display: none;
+}
+
+.hamburger-menu button:hover,
+.hamburger-menu button:focus-visible {
+    background: #2f8df4;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+.ham-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 180px;
+    list-style: none;
+    background: rgb(103, 102, 102);
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+    overflow: hidden;
+}
+
+.ham-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 16px;
+    transition: background 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
+}
+
+.ham-links a:hover,
+.ham-links a:focus-visible {
+    background: #fefe24;
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+/* here used copilot for responsive design */
+
+@media (max-width: 426px) {
+    .hamburger-menu button:focus + .ham-links,
+    .hamburger-menu button:focus-visible + .ham-links,
+    .hamburger-menu:focus-within .ham-links {
+        display: block;
+    }
+    .hamburger-menu button{
+        display: block;
+    }
+}

@@ -1,0 +1,29 @@
+.outer-container{
+    width: 400px;
+    height: 400px;
+    background-color: #8d05af;
+    margin: 100px auto;
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: #850000;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    /* transform: scalex(1.1) scaley(2.1); */
+    /* transform: scale(1.1, 1.5); */
+    
+    /* transform: skew(15deg,10deg) */
+
+    /* transform: translate(100px, 100px); */
+
+    /* transform: rotate(45deg); */
+
+    transform: rotate(45deg) translate(100px, 100px) scale(1.5, 1.5) skew(15deg, 10deg);
+    transform-origin: top left;
+}

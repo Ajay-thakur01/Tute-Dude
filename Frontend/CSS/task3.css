@@ -1,0 +1,44 @@
+/* Defining body's background color */
+body{
+    background-color: #fdc2c2;
+}
+
+/* using class selector */
+.head{
+    color:darkblue;
+}
+
+/* using id selector */
+#bglime{
+    font-size: 45px;
+    background-color: rgb(14, 252, 81);
+}
+
+/* using descendent selector */
+#bglime strong {
+    color:red;
+}
+
+/* Id selector to give paragraph green color */
+#para{
+    color: green;
+}
+
+/* descendent selector using elment selector */
+p strong{
+    color: black;
+    font-size: 25px;
+}
+
+li strong{
+    background-color: blue;
+}
+
+/* Using direct child selector */
+ol > li {
+    color: red;
+}
+
+.liblue{
+    color: blue;
+}

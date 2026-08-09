@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-box {
+    flex-basis: 50%;
+    padding: 3rem 2rem;
+}
+
+.check {
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+    color: gray;
+}
+
+.details {
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+}
+
+.email-id {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.email {
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 2rem;
+}
+
+.pay {
+    padding-bottom: 10px;
+}
+
+.bottom-box {
+    border-radius: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 1rem ;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.card1 {
+    background-color: rgb(240, 240, 240);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    flex-basis: 27%;
+    margin-bottom: 2rem;
+}
+
+.dots {
+    background-color: rgb(240, 240, 240);
+    flex-basis: 10%;
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 10px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.number {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#number {
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: .7rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.expiry {
+    display: block;
+    padding-bottom: 5px; 
+}
+
+#expiry {
+    background-color: rgb(236, 236, 236);
+    display: block;
+    padding: .7rem;
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.cvc {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#cvc {
+    background-color: rgb(236, 236, 236);
+    border: none;
+    padding: .7rem;
+    border-radius: 10px;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.country {
+    display: block;
+    padding-bottom: 5px; 
+}
+
+#country {
+    background-color: rgb(236, 236, 236);
+    display: block;
+    padding: .7rem;
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.zip{
+    display: block;
+    padding-bottom: 5px; 
+}
+
+#zip {
+    background-color: rgb(236, 236, 236);
+    border: none;
+    padding: .7rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 45vw;
+}
+
+.heading {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+}
+
+.bill-box {
+    border: 1px solid rgb(186, 185, 185);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.cupon {
+    padding-bottom: 5px;
+}
+
+.cupon-code {
+    padding: .8rem ;
+    width: 68%;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.apply-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    padding: .8rem;
+    border-radius: 10px;
+    margin: 0 10px 5px 0;
+    display: inline-block;
+}
+
+.grid-box1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.left p {
+    padding-bottom: 10px;
+}
+
+.left .bold{
+    font-weight: 700;
+}
+
+.right p {
+    padding-bottom: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.pay-btn {
+    text-decoration: none;
+    background-color: orange;
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.card1:hover {
+    border: 2px solid orange;
+
+}

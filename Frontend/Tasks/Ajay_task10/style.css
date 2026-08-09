@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+/* Styling Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #1f2937;
+    padding: 0 15px;
+    line-height: 60px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.navbar .btn{
+    background-color: #036bfd;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Styling Hero Section */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling Left Section */
+
+.left{
+    flex: 1;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.left h1{
+    font-size: 4.5rem;
+}
+
+.left h1 span{
+    display: block;
+    color: #036bfd;
+}
+
+.left p{
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.left .btn-2{
+    background-color: #036bfd;
+    color: #ffffff;
+    padding: 20px 70px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Styling Right Section */
+
+.right{
+    flex: 1;
+    padding: 30px;
+}
+
+.right img{
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    display: inline-block;
+    transform-origin: center center;
+    animation: orbitSqueeze 1s infinite ease-in-out alternate;
+}
+
+/* Making it Responsive for Tablet and Mobile View
+>> Tablet View: max-width: 768px
+*/
+@media (max-width: 768px) {
+   .navbar .logo{
+        font-size: 1.5rem;
+    }
+
+    .nav-links a{
+        font-size: 1rem;
+    }
+
+    .navbar .btn{
+        padding: 8px 10px;
+        margin-right: 20px;
+    }
+
+    .left h1{
+        font-size: 2rem;
+    }
+
+    .left p{
+        font-size: 1rem;
+    }
+
+    .left .btn-2{
+        padding: 15px 50px;
+        font-size: 1rem;
+        margin-top: auto;
+    }
+}
+
+/* Now for the Mobile View 
+   >> Mobile View: max-width: 480px
+*/
+@media (max-width: 480px) {
+    .navbar{
+        margin-top: 10px;
+    }
+    .navbar .logo{
+        font-size: 1rem;
+    }
+
+    .nav-links a{
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .navbar .btn{ 
+        font-size: 0.7rem;
+    }
+
+    .hero-section{
+        flex-direction: column;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .left h1{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .left p{
+        font-size: 1rem;
+        margin-left: -5px;
+    }
+
+    .left .btn-2{
+        padding: 12px 40px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Hamburger Menu for Mobile View */
+
+.navbar {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    border: 1px solid #036bfd;
+    box-shadow: inset 0 0 5px rgba(3, 107, 253, 0.5);
+    padding: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 1px;
+    width: 20px;
+    background-color: #000000;
+    margin: 2px 0;
+}
+
+.ham-links {
+    position: absolute;
+    top: -10px;
+    background: #000000;
+    height: 100vh;
+    width: 150px;
+    right: -100px;
+    text-align: center;
+    visibility: hidden;
+    display: block;
+    align-content: center;
+}
+
+.ham-links ul {
+    list-style: none;
+}
+
+.ham-links a {
+    display: block;
+    color: #fcfdff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.hamburger:focus ~ .ham-links{
+    visibility: visible;
+    transform: translateX(-100px);
+    transition: transform 0.6s ease-in-out;
+}
+
+
+@media (max-width: 480px) {
+    .hamburger {
+        display: flex; /* Show hamburger menu on mobile */
+    }
+}
+
+/* hover effect for Button */
+.btn-2:hover{
+    transform: scale(1.2) rotate(-12deg);
+    transition: transform 0.6s;
+}
+
+/* The squeez animation For the image */
+
+/* @keyframes squeez {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+} */
+
+
+/* the orbit and squeez animation for the image */
+@keyframes orbitSqueeze{
+    0% {
+        transform: rotate(0deg) translateX(10px) rotate(0deg) ;
+    }
+    100% {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg) scaleX(0.8) scaleY(1.05) ;
+    }
+}   

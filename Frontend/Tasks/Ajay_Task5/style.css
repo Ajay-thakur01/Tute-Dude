@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* aligning evrything in center */
+nav{
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* adjusting logo of the company */
+.logo{
+    float: left;
+    width: 80px;
+    height: auto;
+    margin-left: 30px;
+}
+
+/* styling the links */
+.links{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links li{
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Styling the ancher tags */
+.links li a{
+    background-color: rgb(249, 243, 243);
+    color: red;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* styling the username */
+h3{
+    float: right;
+    margin: 0 30px;
+    background-color: aqua;
+    color: blue;
+    width: 6vw;
+    border-radius: 5px;
+}
+
+
+/* Styling the lifdiv of hero section */
+.leftdiv{
+    width: 48vw;
+    height: auto;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.leftdiv h1{
+    font-size: 3rem;
+    /* margin-left:20px; */
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.leftdiv h1 span{
+    color: blue;
+}
+
+.leftdiv p{
+    text-align: justify;
+    /* margin-left:30px; */
+    padding: 30px;
+}
+
+.leftdiv button{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    margin-left:30px;
+}
+
+
+/* styling the rightdiv of hero section */
+.rightdiv{
+    float: right;
+    width: 50vw;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.rightdiv img{
+    width: auto;
+    height:56vh;
+    margin-top: 50px;
+    margin-left: 100px;
+}

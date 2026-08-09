@@ -1,0 +1,195 @@
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    color: rgb(213, 153, 42);
+    font-size: 3.5rem;
+    margin: 0;
+
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--body-text);
+    font-size: 1.3rem;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 20px;
+}
+
+.search-box {
+    padding: 10px 12px 10px 36px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.search-box:focus {
+    outline: none;
+    border-color: #888;
+    box-shadow: inset 0 0 0 3px rgba(255, 157, 0, 0.095);
+}
+
+.nav-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.cart-icon {
+    height: 20px;
+}
+
+.cart-count {
+    font-size: 1rem;
+    color: #333;
+}
+
+.nav-profile {
+    background-color: var(--box-background);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+}
+
+/* Shoping Cart */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .heading-text {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.left-grid-box {
+    flex-basis: 60%;
+    /* text-align: end; */
+}
+
+.left-grid-box .top-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid rgb(174, 173, 173);
+}   
+
+.left-grid-box .bottom-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left-grid-box .bottom-section .price {
+    word-spacing: 100px;
+}
+
+.right-box {
+    flex-basis: 40%;
+    padding: 2rem 3rem;
+    margin-left: 5rem;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 10px;
+}
+
+.bill-box p {
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+.bill-box .cupon-code {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(240, 237, 237);
+}
+
+.bill-box .apply-btn {
+    text-decoration: none;
+    background-color: rgb(64, 64, 254);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.bill-box .grid-box1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bill-box .left {
+    grid-column: span 2;
+}
+
+.bill-box .bold {
+    font-weight: 700;
+}
+
+.right-box .pay-now-btn {
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.right-box .svg-img {
+    display: flex;
+}
+
+.btn2 {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 3rem;
+    display: block;
+}

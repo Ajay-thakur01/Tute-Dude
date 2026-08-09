@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    background-color: aqua;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.box1{
+    color: red;
+    background-color: yellow;
+    top: 400px;
+    left: 400px;
+    position: static;
+}
+
+.box2{
+    color: red;
+    background-color: black;
+    position: relative;
+    left: 400px;
+}
+
+.box3{
+    color: red;
+    background-color: blue;
+    position: absolute;
+    right: 0;
+}
+
+/* Fixed always take html as root or it will be fixed on one position */
+ .box4{
+    color: red;
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+}  
+
+/* it takes container as a parent class or works only in parent calss i.e container */
+.box5{
+    color: red;
+    background-color: white;
+    position: sticky;
+    left: 200px;
+}
