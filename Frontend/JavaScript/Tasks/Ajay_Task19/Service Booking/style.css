@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.user-profile{
+    display: flex;
+    gap: 0;
+}
+
+.user-pill{
+    background-color: rgb(208, 232, 255);
+    border-radius: 20px 0 0 20px;
+    padding: 4px 8px;
+}
+
+.logout-btn{
+    padding: 0 8px;
+    border-radius: 0 20px 20px 0;
+    margin-right: 5px;
+    border: none;
+    background-color: rgb(254, 184, 184);
+}
+
+
+/* !-- Main Content -- */
+/* -- left column -- */
+
+.left-column{
+    
+}
+
+.main-container{
+    background-color: rgb(240, 234, 226);
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4rem ;
+    padding: 2rem 5px; 
+}
+
+.added-items-card{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+    max-width: 400px;
+    margin: 0 .5rem 1rem auto;
+}
+
+.left-column{
+    flex-basis: 50%;
+}
+
+.card-title{
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: white;
+}
+
+.table-header{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.empty-state{
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.info-icon{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.empty-subtext{
+    padding-bottom: 2rem;
+}
+
+.cart-footer{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 3rem 0.5rem 1rem;
+}
+
+.book-now-card{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+    max-width: 400px;
+    margin: 0 .5rem 1rem auto;
+}
+
+.book-now-card .card-title{
+    text-align: start;
+    padding: .8rem 0 .6rem 5px;
+}
+
+.form-group{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.form-group label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.form-group input{
+    padding: 8px 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.btn-book{
+    width: 90%;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.error-text{
+    text-align: center;
+    color: red;
+    padding-bottom: 1.5rem;
+}
+
+/* -- right column -- */
+
+.right-column{
+    max-width: 400px;
+    height: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.services-header h2{
+    padding: 10px 0 10px 10px;
+    font-size: 1.6rem;
+}
+
+.services-header p{
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid black; 
+}
+
+.service-image-container{
+    width: 300px;
+    height: 270px;
+    border: 1px solid;
+    margin: 10px auto;
+}
+
+.service-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+}
+
+.action-buttons{
+    padding: 0 10px 10px 10px;
+}
+
+.btn{
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-skip{
+    background-color: rgb(255, 202, 202);
+    padding: 8px 0;
+    width: 38%;
+}
+
+.btn-add{
+    padding: 8px 0;
+    background-color: rgb(178, 239, 137);
+    width: 60%;
+}
+
+.footer-note{
+    text-align: center;
+}
+
+.cart-items-list {
+    height: 165px;
+    display: none;
+}
