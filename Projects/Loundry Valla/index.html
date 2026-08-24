@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loundry Valla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <section class="navbar" data-aos="fade-in"  data-aos-duration="2000">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="links">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#footer">About US</a></li>
+                <li><a href="#newsletter">Contact US</a></li>
+            </div>
+            <div class="username">
+                <a href="#">Username</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- main section -->
+
+    <section id="main" class="mainSection" data-aos="fade-in"  data-aos-duration="2000">
+        <div class="main-container">
+            <!-- left section -->
+            <div class="left">
+                <div class="heading-line">
+                    <h1>Revitalize Your Clothes with Expert
+                        <span>Loundry Services!</span>
+                    </h1>
+                    <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                    <button data-target="#services" >Book a Service Today!</button>
+                </div>
+            </div>
+
+            <!-- right section -->
+            <div class="right">
+                <img src="1.png" alt="main-image">
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer section -->
+
+    <footer class="footer-section" data-aos="fade-in"  data-aos-duration="2000">
+        <div class="footer-container">
+            <div class="left-text">
+                <h3>Our Achievements</h3>
+            </div>
+            <div class="achievements">
+                <div class="box box1">
+                    <h3>15+</h3>
+                    <p>Loundry Services</p>
+                </div>
+                <div class="box box2">
+                    <h3>240+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="box box3">
+                    <h3>2+ Yrs</h3>
+                    <p>Experience </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Our Services section -->
+
+    <section class="services" data-aos="fade-in"  data-aos-duration="2000" id="services">
+        <div class="services-comntainer">
+            <div class="Sleft">
+                <div class="left-top">
+                    <h3>Our Services</h3>
+                    <p>Click on the Add Button to add the Services to your cart</p>
+                </div>
+                <div class="left-mid">
+                    <div class="cart-services">
+                        <div class="Snames">
+                            <p>Dry Cleaning</p>
+                            <p>Wash & Fold</p>
+                            <p>Ironing</p>
+                            <p>Stain Removal</p>
+                            <p>Leather & Suede Cleaning</p>
+                            <p>Wedding Dress Cleaning</p>
+                        </div>
+                        <div class="Scost">
+                            <p>₹200.00</p>
+                            <p>₹100.00</p>
+                            <p>₹30.00</p>
+                            <p>₹500.00</p>
+                            <p>₹999.00</p>
+                            <p>₹2800.00</p>
+                        </div>
+                    </div>
+                    <div class="cart-buttons">
+                        <button class="addBtn1">Add Items</button>
+                        <button class="addBtn2">Add Items</button>
+                        <button class="addBtn3">Add Items</button>
+                        <button class="addBtn4">Add Items</button>
+                        <button class="addBtn5">Add Items</button>
+                        <button class="addBtn6">Add Items</button>
+                    </div>
+                </div>
+                <div class="left-bottom">
+                    <p>Add The Items to the Cart and Book Now</p>
+                </div>
+            </div>
+
+            <!-- Right section -->
+            <div class="Sright">
+                <div class="upper-Box">
+                    <div class="add-items">
+                        <p>Added Items<p>
+                    </div>
+
+                    <div class="top-lines">
+                            <p>Sr.No.</p>
+                            <p>Service Name</p>
+                            <p>Price</p>
+                    </div>
+                    <!-- Empty State -->
+                <div class="empty-state" id="cart-empty-state">
+                    <div class="info-icon">ⓘ</div>
+                    <p class="empty-subtext">Add items to the cart from the services bar</p>
+                </div>
+
+                <!-- Empty class to be accessed by JS -->
+                <ul class="cart-items-list" id="cart-items-list"></ul>
+
+                <!-- Cart Total Footer -->
+                <div class="cart-footer">
+                    <span>Total Amount</span>
+                    <span class="total-price" id="total-amount">₹ 0</span>
+                </div>
+                </div>
+
+                <div class="lower-box">
+                    <div class="book-now">
+                        <p>Book Now</p>
+                    </div>
+                    <div class="personal-info">
+                        <label for="name" class="name">Full Name</label>
+                        <input type="text" id="name" placeholder="username">
+
+                        <div class="flex-box">
+                            <div class="flex-box1">
+                                <label for="email" class="email">Email</label>
+                                <input type="email" name="eamil" id="email" placeholder="abc@gmail.com">
+                            </div>
+
+                            <div class="flex-box2">
+                                <label for="Pnumber" class="pnumber">Phone Number</label>
+                                <input type="tel" name="Pnumber" id="Pnumber" placeholder="1234567890">
+                            </div>
+
+                        </div>  
+                        <div class="bookButton" >
+                            <button>Book Now</button>
+
+                        </div>  
+                        <p class="booking-message" id="booking-message" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main footer -->
+    <section id="footer" class="newslatter-booking" data-aos="fade-in"  data-aos-duration="2000">
+        <div class="main-features">
+            <div class="feature1">
+                <img src="#" alt="Premium Services">
+                <p>Premium Services</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, corporis!</p>
+            </div>
+
+            <div class="feature2"><img src="#" alt="Premium Services">
+                <p>Premium Services</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, corporis!</p>
+            </div>
+
+            <div class="feature3"><img src="#" alt="Premium Services">
+                <p>Premium Services</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, corporis!</p>
+            </div>
+
+            <div class="feature4"><img src="#" alt="Premium Services">
+                <p>Premium Services</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, corporis!</p>
+            </div>
+
+        </div>
+
+        <div class="newsletter" id="newsletter">
+            <div class="subscribe">
+                <p>subscripe to our Newsletter</p>
+            </div>
+            <div class="info-sub">
+                <input type="text" placeholder="Full Name">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="subButton">
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="bottomFooter footerBox1">
+                <a href="#">Logo</a>
+                <p>About Us</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="bottomFooter footerBox2">
+                <p>Important Links</p>
+                <a href="#">About US</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="bottomFooter footerBox3">
+                <p>Contact</p>
+                <p>mail@site.com</p>
+                <p>123456789</p>
+            </div>
+            <div class="bottomFooter footerBox4">
+                <p>Follow Us</p>
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+$("button[data-target]").on("click", function () {
+    const target = $(this).data("target");
+
+    $("html, body").animate({
+        scrollTop: $(target).offset().top
+    }, 800);
+});
+</script>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>

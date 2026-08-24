@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+         rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo" id="logo">Ecommerce</a>
+
+
+        <a href="cart.html" class="cart-icon">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-item-count"></span>
+        </a>
+    </nav>
+
+    <section class="product-collection">
+        <h1>Latest Collection</h1>
+        <div class="product-list"></div>
+    </section>
+
+    <div class="btns">
+        <button id="red" class="red">Red</button>
+        <button id="green" class="green">Green</button>
+        <button id="blue" class="blue">Blue</button>
+        <p class="hide" id="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam sed maiores nemo amet cum at nisi eius cupiditate, consequuntur obcaecati? Consequatur voluptatem possimus ratione aperiam? Iste ipsa esse voluptas ipsam laudantium assumenda a possimus maiores eveniet fugit unde corrupti consequatur quam quo praesentium, expedita voluptatem, at facere. Repudiandae, repellendus.</p>
+    </div>
+
+    <div class="responsive-buttons">
+        <button class="plus" id="increase">+</button>
+        <button class="minus" id="decrease">-</button>
+        <button class="reset" id="reset">reset</button>
+
+        <div>
+        <h1>Count = 
+        <span class="counter" id="counter+">0</span>
+        </h1>
+        <br>
+        <h1>Count = 
+        <span class="counter" id="counter-">0</span>
+        </h1>
+        </div>
+    </div>
+
+    <div class="textDOM">
+        <textarea name="" id="text"></textarea>
+        <p id="count">Characters : 0</p>
+    </div>
+
+    <!-- Add items to list  -->
+     <div class="item-list">
+        <input type="text" class="in">
+        <button class="add-btn" id="addBtn">Add</button>
+        <ul id="list"></ul>
+     </div>
+
+     <div class="todo">
+        <input type="text" id="todoInput" placeholder="Enter todo">
+        <button id="addTodo">Add todo</button>
+
+        <p>Total Todos: <span id="total">0</span></p>
+        <p>Completed: <span id="complete">0</span></p>
+
+        <ul id="todoList"></ul>
+     </div>
+
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+    <script src="level2.js"></script>
+
+</body>
+</html>

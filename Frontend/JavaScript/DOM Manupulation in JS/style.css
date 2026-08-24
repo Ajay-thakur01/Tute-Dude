@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    padding: 12px;
+}
+
+.box{
+    width: 100PX;
+    height: 100PX;
+    background-color: coral;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
