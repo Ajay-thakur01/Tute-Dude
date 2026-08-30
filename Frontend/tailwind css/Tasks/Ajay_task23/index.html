@@ -13,7 +13,7 @@
     <nav class="fixed inset-x-0 top-0 z-50 max-w-7xl mx-auto px-4 sm:px-6 bg-white/95 backdrop-blur-md
      flex items-center justify-between py-4 border-b border-gray-200">
         <div class="flex gap-2">
-             <a href="#" class="text-xl font-bold text-gray-900">
+             <a href="#home" class="text-xl font-bold text-gray-900">
                 Greenwood
             </a>
             <span class="text-xs font-medium px-2 py-1 rounded-full bg-green-100 text-green-700">
@@ -26,22 +26,22 @@
                 <li><a class="relative after:absolute after:left-0 after:-bottom-1.5
                     after:h-px after:w-0 after:bg-gray-700 after:transition-all
                     after:duration-200 hover:after:w-full "
-                     href="#">Section</a></li>
+                     href="#section">Section</a></li>
                 <li><a class="relative after:absolute after:left-0 after:-bottom-1.5
                     after:h-px after:w-0 after:bg-gray-700 after:transition-all
                     after:duration-200 hover:after:w-full"
-                     href="#">Gallery</a></li>
+                     href="#gallery">Gallery</a></li>
                  <li><a class="relative after:absolute after:left-0 after:-bottom-1.5
                     after:h-px after:w-0 after:bg-gray-700 after:transition-all
                     after:duration-200 hover:after:w-full"
-                     href="#">Membership</a></li>
+                     href="#membership">Membership</a></li>
                  <li><a class="relative after:absolute after:left-0 after:-bottom-1.5
                     after:h-px after:w-0 after:bg-gray-700 after:transition-all
                     after:duration-200 hover:after:w-full"
-                     href="#">Events</a></li>
+                     href="#events">Events</a></li>
             </ul>
         </div>
-        <button class="bg-white border px-4 rounded-2xl 
+        <button class="bg-white border px-4 py-1 rounded-2xl 
         hover:bg-black hover:text-white">Visit us</button>
     </nav>
 
@@ -49,45 +49,43 @@
         hero section
     -->
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-24">
-        <div class="lg:grid lg:grid-cols-2 flex flex-col md:items-center md:text-center lg:items-center lg:text-left min-h-screen">
-            <div class="flex flex-col md:justify-center w-full">
-                <p class="md:text-6xl pt-10 lg:w-120 md:w-140 w-full text-4xl text-gray-800">Your Neighbourhood Library</p>
-                <p class="pt-7 w-full max-w-xl text-gray-500">Thousands of books, quite reading rooms, community evens, and free WiFi - serving Greenwood since 1983</p>
+    <section id="home" class="mx-auto max-w-7xl bg-linear-to-r from-orange-200 via-orange-50 to-white px-4 pt-20 sm:px-6 sm:pt-24">
+        <div class="grid min-h-screen grid-cols-1 items-center gap-8 py-8 lg:grid-cols-2 lg:gap-12">
+            <div class="flex w-full flex-col justify-center text-center lg:text-left">
+                <p class="w-full text-4xl text-gray-800 sm:text-5xl lg:text-6xl">Your Neighbourhood Library</p>
+                <p class="mt-6 max-w-xl text-base text-gray-500 sm:text-lg">Thousands of books, quiet reading rooms, community events, and free WiFi — serving Greenwood since 1983.</p>
 
-                <div class="flex pb-10 justify-center lg:justify-start gap-3 pt-5">
-                <button class="bg-black text-white rounded-2xl py-2 px-4
-                hover:bg-blue-800 transition-all duration-300  hover:border">Explore collection</button>
-                <button class="bg-white  border transition-all duration-300 border-gray-300 text-black 
-                rounded-2xl py-2 px-4 hover:border-black"> Join Free</button>
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+                    <button class="rounded-2xl bg-black px-4 py-2 text-white transition-all duration-300 hover:bg-blue-800">Explore collection</button>
+                    <button class="rounded-2xl border border-gray-300 bg-white px-4 py-2 text-black transition-all duration-300 hover:border-black">Join Free</button>
                 </div>
-                </div>
-            <div class="flex hover:scale-105 transition-scale duration-300 md:items-center min-h-96 md:h-screen justify-center">
-                <img class="size-80 sm:size-96 lg:size-130 rounded-2xl object-cover"
-                 src="https://i.pinimg.com/1200x/ac/2c/62/ac2c62b4e7de2720bc736a19d1c706a6.jpg" alt="">
+            </div>
+
+            <div class="flex justify-center lg:justify-end">
+                <img class="w-full max-w-[360px] rounded-2xl object-cover shadow-xl transition-transform duration-300 hover:scale-105 sm:max-w-[520px] lg:max-w-[500px]"
+                 src="https://i.pinimg.com/1200x/ac/2c/62/ac2c62b4e7de2720bc736a19d1c706a6.jpg" alt="Greenwood library interior">
             </div>
 
             <!-- Stats -->
-            <div class="col-span-2 grid grid-cols-2 md:grid-cols-4 gap-6 w-full py-10 border-t border-gray-100">
+            <div class="col-span-full grid grid-cols-2 gap-6 border-t border-gray-100 py-10 md:grid-cols-4">
                 <div>
-                    <h1 class="font-medium text-3xl">1200+ </h1>
+                    <h1 class="text-3xl font-medium">1200+ </h1>
                     <p class="text-gray-500">Books</p>
                 </div>
                 <div>
-                    <h1 class="font-medium text-3xl">40+ </h1>
+                    <h1 class="text-3xl font-medium">40+ </h1>
                     <p class="text-gray-500">Years of Service</p>
                 </div>
                 <div>
-                    <h1 class="text-green-700 text-3xl font-medium">Free </h1>
-                    <p class="text-gray-500">Wi-Fi & ACCESS</p>
+                    <h1 class="text-3xl font-medium text-green-700">Free </h1>
+                    <p class="text-gray-500">Wi-Fi & Access</p>
                 </div>
                 <div>
-                    <h1 class="font-medium text-3xl">6 </h1>
-                    <P class="text-gray-500">Dedicated sections</P>
+                    <h1 class="text-3xl font-medium">6 </h1>
+                    <p class="text-gray-500">Dedicated sections</p>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- 
@@ -173,7 +171,7 @@
         <!-- 
             Library images
         -->
-            <section class="max-w-7xl mx-auto px-6 py-8">
+            <section id="gallery" class="max-w-7xl mx-auto px-6 py-8">
                 <div class="flex justify-between">
                     <h1 class="">OUR SPACES</h1>
                     <button class="rounded-2xl border border-gray-500 px-3 hover:bg-black hover:text-white">
@@ -287,7 +285,7 @@
             <!-- 
                 About Section
             -->
-            <section class="max-w-4xl mx-auto px-6 py-20">
+            <section id="section" class="max-w-4xl mx-auto px-6 py-20">
                 <div>
                     <h1 class="text-4xl">More than a building full of books - a home for curious minds.</h1>
                 </div>
@@ -301,7 +299,7 @@
                 Membership Section
             -->
 
-            <section class="max-w-7xl px-6 mx-auto">
+            <section id="membership" class="max-w-7xl px-6 mx-auto">
                 <div class="flex items-center  justify-between">
                 <h1 class="text-3xl my-10">Join the Library</h1>
                 <button class="border border-gray-600 px-3 py-1 rounded-2xl">Sign Up</button>
@@ -386,7 +384,7 @@
                 Event Section
             -->
 
-            <section class="max-w-7xl px-6 py-10">
+            <section id="events" class="max-w-7xl mx-auto px-6 py-10">
                 <h1 class="text-gray-500 py-8 uppercase">Events</h1>
                 <div class="flex items-center justify-between mb-8">
                 <h1 class="text-2xl font-medium ">What's Coming Up</h1>
@@ -395,7 +393,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-15">
                     <div>
                         <div class="overflow-hidden rounded-2xl">
-                        <img class="md:h-30 h-100 w-full hover:scale-110 transition-scale duration-200" 
+                        <img class="md:h-50 h-100 w-full hover:scale-110 transition-scale duration-200" 
                         src="https://i.pinimg.com/1200x/b1/e1/20/b1e120551fb959c7c484fc0dd6c23f30.jpg" alt="">
                         </div>
                         <p class="text-gray-800 pt-2 text-sm">
@@ -406,7 +404,7 @@
 
                     <div>
                         <div class="overflow-hidden rounded-2xl">
-                        <img class="md:h-30 h-100 w-full hover:scale-110 transition-scale duration-200"
+                        <img class="md:h-50 h-100 w-full hover:scale-110 transition-scale duration-200"
                         src="https://i.pinimg.com/1200x/96/14/90/9614906f9ac22a19f1b5435baba51617.jpg" alt="">
                         </div>
                         <p class="text-gray-800 pt-2 text-sm">
@@ -417,7 +415,7 @@
 
                     <div>
                         <div class="overflow-hidden rounded-2xl">
-                        <img class="md:h-30 h-100 w-full hover:scale-110 transition-scale duration-200" 
+                        <img class="md:h-50 h-100 w-full hover:scale-110 transition-scale duration-200" 
                         src="https://i.pinimg.com/736x/e0/a0/df/e0a0df74f89e9a621f7f91d8f311c367.jpg" alt="">
                         </div>
                         <p class="text-gray-800 pt-2 text-sm">
@@ -429,7 +427,7 @@
                 
                     <div>
                         <div class="overflow-hidden rounded-2xl">
-                        <img class="md:h-30 h-100 w-full hover:scale-110 transition-scale duration-200 "
+                        <img class="md:h-50 h-100 w-full hover:scale-110 transition-scale duration-200 "
                         src="https://i.pinimg.com/736x/46/0f/1b/460f1b7f3aad5ec7e49ad2781d5ccfc8.jpg" alt="">
                         </div>
                         <p class="text-gray-800 pt-2 text-sm">
@@ -557,6 +555,23 @@
 
             <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                  $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                      event.preventDefault();
+                      var hash = this.hash;
+                      $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                      }, 800, function(){
+                        window.location.hash = hash;
+                      });
+                    } 
+                  });
+                });
+            </script>
 
 </body>
 </html>
