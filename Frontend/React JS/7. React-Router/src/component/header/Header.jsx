@@ -1,4 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+const navLinkClass = ({ isActive }) =>
+  `transition hover:text-cyan-300 ${isActive ? 'text-cyan-300' : ''}`
 
 function Header() {
   return (
@@ -9,10 +13,30 @@ function Header() {
         </div>
 
         <nav className='flex items-center gap-6 text-sm font-medium'>
-          <a href='/' className='transition hover:text-cyan-300'>Home</a>
-          <a href='/about' className='transition hover:text-cyan-300'>About</a>
-          <a href='/services' className='transition hover:text-cyan-300'>Services</a>
-          <a href='/contact' className='transition hover:text-cyan-300'>Contact</a>
+          <NavLink to='/' className={navLinkClass}>Home</NavLink>
+          <NavLink to='/about' className={navLinkClass}>About</NavLink>
+          <NavLink to='/contact' className={navLinkClass}>Contact</NavLink>
+          <NavLink to='/github' className={navLinkClass}>GitHub</NavLink>
+        </nav>
+
+        <nav className='flex gap-4 font-medium'>
+          <NavLink to='/login' className={({isActive}) => 
+          `px-4 py-2 rounded-md transition ${
+            isActive
+            ? "bg-black text-green-400 shadow-sm shadow-emerald-300"
+            : "text-white hover:bg-blue-400 hover:text-gray-800"
+            }`
+          }>
+          Login</NavLink>
+          
+          <NavLink to='/signup' className={({isActive}) => 
+          `px-4 py-2 rounded-md transition ${
+            isActive
+            ? "bg-black text-green-400 shadow-sm shadow-emerald-300"
+            : "text-white hover:bg-blue-400 hover:text-gray-800"
+            }`
+            }>
+            Sign Up</NavLink>
         </nav>
       </div>
     </header>
